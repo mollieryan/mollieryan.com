@@ -1,0 +1,74 @@
+.mr-font-brand {
+  font-family: $font-family-brand;
+}
+
+[class*="mr-heading"] {
+  font-weight: $font-weight-semibold;
+}
+
+.mr-heading-1 {
+  font-size: $heading-1-font-size;
+  line-height: $heading-1-line-height;
+}
+
+.mr-heading-3 {
+  font-size: $heading-1-font-size;
+  line-height: $heading-1-line-height;
+}
+
+.mr-brand-subhead {
+  font-size: $font-size-small;
+  line-height: $line-height-small;
+}
+
+.mr-address {
+  color: $color-text-subdued;
+  font-size: $font-size-address;
+  line-height: $line-height-address;
+  font-style: normal;
+}
+
+.mr-address a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.mr-address a:hover {
+  text-decoration: underline;
+}
+
+.mr-nowrap {
+  white-space: nowrap;
+}
+
+.mr-list-two-columns {
+  list-style: none;
+  padding: 0;
+}
+
+@media (min-width: $breakpoint-m) {
+  .mr-list-two-columns {
+    columns: 2;
+    column-gap: $spacing-32;
+  }
+}
+
+.mr-text-small {
+  font-size: $font-size-small;
+  line-height: $line-height-small;
+}
+
+.mr-text-medium {
+  font-size: $font-size-medium;
+  line-height: $line-height-medium;
+}
+
+.mr-text-large {
+  font-size: $font-size-large;
+  line-height: $line-height-large;
+}
+
+.mr-text-inherit {
+  color: inherit;
+  text-decoration: inherit;
+}

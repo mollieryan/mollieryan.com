@@ -1,0 +1,31 @@
+header {
+  padding: $spacing-32 $spacing-16;
+}
+
+main {
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+  background-color: $white;
+  position: relative;
+  z-index: 100;
+}
+
+.mr-page-content {
+  padding: $spacing-64 $spacing-16;
+  font-size: $font-size-large;
+  line-height: $line-height-large;
+}
+
+.mr-page-content > * {
+  max-width: $content-max-width;
+  margin: 0 auto $spacing-24 auto;
+}
+
+.mr-content-max {
+  max-width: $content-max-width;
+  margin: 0 auto;
+  padding: $spacing-32 $spacing-16;
+}
+
+footer {
+  padding: $spacing-32 $spacing-16;
+}

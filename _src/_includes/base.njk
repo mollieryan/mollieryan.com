@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if title != "Home" %}{{ title }} | {% endif %} Mollie Ryan</title>
+  <meta name="description" content="{{ site.description }}">
+  <link rel="preload" href="/fonts/EBGaramond-Regular-subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/EBGaramond-SemiBold-subset.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/JuliusSansOne-Regular-subset.woff2" as="font" type="font/woff2" crossorigin>
+  <style>{% include "./_site/css/style.css" | url %}</style>
+  <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+</head>
+<body>
+  <div class="mr-nav-toggle" data-toggle="main-nav">
+    <svg aria-hidden="true" focusable="false" role="img" viewBox="0 0 448 512" class="mr-icon-24" width="24" height="24"><path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></svg>
+    <span>Menu</span>
+  </div>
+  <header class="mr-space-between">
+    <div class="mr-font-brand mr-stack-16">
+      <a href="/" class="mr-text-inherit">
+        <h1 class="mr-heading-1">Mollie Ryan, LCPC, BC-DMT</h1>
+        <p class="mr-brand-subhead">Psychotherapy for adolescents, adults, and couples</p>
+    </a>
+    </div>
+    <address class="mr-address">
+      4055 W. Peterson Avenue, Chicago, IL 60646<br>
+      <a href="tel:+17737267290">773-726-7290</a> &middot; <a href="mailto:mr@mollieryan.com">mr@mollieryan.com</a>
+    </address>
+  </header>
+
+  <nav id="main-nav">
+    <ul class="mr-nav">
+      {% for item in navigation %}
+      <li><a href="{{ item.url }}"{% if page.url == item.url %} class="is-active"{% endif %}>{{ item.label }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+
+  <main>
+    {% if title == "Home" %}
+      <div class="mr-image-autoheight">
+        {% image "./_src/images/mollie-cropped.jpg", "Mollie Ryan", "(min-width: 43.75em) 50vw, 100vw" %}
+      </div>
+    {% endif %}
+    <section class="mr-page-content">
+      {% if title != "Home" %}<h2>{{ title }}</h2>{% endif %}
+
+      {{ content | safe }}
+    </section>
+
+    <section class="mr-form-container">
+
+      <form class="mr-form mr-two-column-form" netlify name="Contact" action="/thank-you">
+      
+        <h3 class="mr-heading-3 mr-stack-16">Contact Mollie Ryan</h3>
+
+        <label class="mr-label">
+          <p>Name</p>
+          <input type="text" name="Name" class="mr-input-text" required>
+        </label>
+
+        <label class="mr-label">
+          <p>Email</p>
+          <input type="text" name="Email" class="mr-input-text" required>
+        </label>
+
+        <label class="mr-label">
+          <p>Phone Number</p>
+          <input type="text" name="Phone" class="mr-input-text" required>
+        </label>
+      </div>
+
+      <label class="mr-label">
+        <p>Notes</p>
+        <textarea name="Notes" class="mr-input-text"></textarea>
+      </label>
+
+        <div>
+          <p class="mr-stack-16">Please do not submit any Protected Health Information (PHI).</p>
+
+          <button type="submit" class="mr-button">Submit</button>
+        </div>
+      </form>
+    </section>
+
+    <div class="mr-flex-row mr-content-max mr-60-40">
+      <section class="mr-flex-item mr-stack-32">
+        <h3 class="mr-heading-3 mr-stack-16">Location</h3>
+
+        <div class="mr-map">
+          <div class="mr-image-autoheight">
+            {% image "./_src/images/mr-map.png", "Map of 4055 W. Peterson Ave., Chicago, IL 60646", "(min-width: 43.75em) 50vw, 100vw" %}
+          </div>
+          <address class="mr-map-label">
+            4055 W. Peterson Avenue<br>
+            Chicago, IL 60646<br>
+          </address>
+        </div>
+      </section>
+
+      <section class="mr-stack-32">
+        <h3 class="mr-heading-3 mr-stack-16">Availability</h3>
+        <p class="mr-stack-16"><a href="/contact-me/">Contact me</a> for an appointment</p>
+
+        <dl>
+          <dt>Monday</dt>
+          <dd>8:00am&ndash;8:00pm</dd>
+
+          <dt>Tuesday</dt>
+          <dd class="mr-text-medium">Currently not accepting new clients on this day</dd>
+
+          <dt>Wednesday</dt>
+          <dd class="mr-text-medium">Currently not accepting new clients on this day</dd>
+
+          <dt>Thursday</dt>
+          <dd>8:00am&ndash;8:00pm</dd>
+
+          <dt>Friday</dt>
+          <dd>8:00am&ndash;8:00pm</dd>
+
+          <dt>Saturday</dt>
+          <dd class="mr-text-medium">Currently not accepting new clients on this day</dd>
+
+          <dt>Sunday</dt>
+          <dd>Closed</dd>
+        </dl>
+      </section>
+    </div>
+  </main>
+
+  <footer class="mr-font-brand">
+    <p class="mr-text-large"><strong>Mollie Ryan</strong></p>
+    <p class="mr-text-small">Psychotherapy for adolescents, adults and couples</p>
+  </footer>
+
+  <script>
+    let menuToggle = document.querySelector(".mr-nav-toggle");
+    let body = document.querySelector("body");
+
+    menuToggle.addEventListener('click', function(event) {
+      body.classList.toggle("nav-is-active");
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+.mr-nav {
+  display: none;
+}
+
+.nav-is-active #main-nav {
+  height: 100%;
+  position: absolute;
+  top: 64px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  z-index: 200;
+}
+
+.nav-is-active .mr-nav {
+  display: flex;
+  flex-direction: column;
+  background-color: $green-800;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.mr-nav a {
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+  padding: $spacing-12;
+  min-width: $nav-item-min-width;
+  font-size: $font-size-medium;
+  line-height: $line-height-medium;
+  white-space: nowrap;
+  color: $white;
+  text-transform: uppercase;
+}
+
+.mr-nav a:hover,
+.mr-nav a.is-active {
+  background-color: $color-nav-hover-background;
+  color: $color-nav-hover-text;
+}
+
+.mr-nav-toggle {
+  display: flex;
+  align-items: center;
+  background-color: $color-background-brand;
+  color: $color-text-inverse;
+  text-transform: uppercase;
+  font-size: $font-size-large;
+  line-height: $line-height-large;
+  font-weight: $font-weight-semibold;
+  padding: $spacing-16;
+  cursor: pointer;
+}
+
+.mr-nav-toggle > :not(:last-child) {
+  margin-right: $spacing-12;
+}
+
+@media (min-width: $breakpoint-m) {
+  .mr-nav-toggle {
+    display: none;
+  }
+
+  .mr-nav,
+  .nav-is-active .mr-nav {
+    display: flex;
+    flex-direction: row;
+    border-top: 2px solid $green-600;
+    align-items: center;
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .nav-is-active #main-nav {
+    position: relative;
+    z-index: 0;  
+    height: auto;
+    position: static;
+    width: auto;
+    height: auto;
+  }
+
+  .mr-nav a {
+    color: $color-text-body;
+    text-align: center;
+    white-space: nowrap;
+    color: $color-text-body;
+    text-transform: none;
+  }
+}

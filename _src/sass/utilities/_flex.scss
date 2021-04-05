@@ -1,0 +1,23 @@
+@media (min-width: $breakpoint-m) {
+
+  .mr-flex-row,
+  .mr-space-between {
+    display: flex;
+  }
+
+  .mr-space-between {
+    justify-content: space-between;
+  }
+
+  .mr-space-between > :not(:last-child),
+  .mr-flex-row > :not(:last-child) {
+    margin-right: $spacing-32;
+  }
+
+  .mr-flex-item {
+    flex: 1;
+  }
+  .mr-60-40 > :last-child {
+    flex: 0 0 40%;
+  }
+}

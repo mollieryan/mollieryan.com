@@ -1,0 +1,61 @@
+$black:     #000000;
+$gray-800:  #221F1F;
+$gray-700:  #444444;
+$gray-600:  #60687A;
+$gray-100:  #F2F2F2;
+$white:     #FFFFFF;
+$green-800: #2b5256;
+$green-600: #37776A;
+$green-100: #E7F0EE;
+$lime:      #8DFF77;
+$red:       #C0392B;
+
+$font-family: 'EB Garamond', sans-serif;
+$font-family-brand: 'Julius Sans One', sans-serif;
+
+$font-weight-semibold: 600;
+$font-weight-regular: 400;
+
+$heading-1-font-size: 2rem;
+$heading-1-line-height: 2.125rem;
+
+$font-size-small: .875rem;
+$font-size-medium: 1rem;
+$font-size-address: 1.125rem;
+$font-size-large: 1.25rem;
+
+$line-height-small: 1.5rem;
+$line-height-medium: 1.125rem;
+$line-height-address: 1.5rem;
+$line-height-large: 2rem;
+
+$spacing-4: .25rem;
+$spacing-8: .5rem;
+$spacing-12: .75rem;
+$spacing-16: 1rem;
+$spacing-24: 1.5rem;
+$spacing-32: 2rem;
+$spacing-64: 4rem;
+
+$max-width: 1170px;
+$content-max-width: 944px;
+$breakpoint-m: 700px;
+$nav-item-min-width: 85px;
+
+$color-text-body: $gray-800;
+$color-text-subdued: $gray-600;
+$color-text-inverse: $white;
+
+$color-background-brand: $green-600;
+$gradient-background: linear-gradient(80deg, #449586 0%, #2b5256 100%);
+
+$color-nav-hover-background: $green-100;
+$color-nav-hover-text: $green-600;
+
+$color-border-default: $gray-600;
+$border-width-default: 1px;
+$border-width-thick: 2px;
+$border-radius-medium: 8px;
+
+$button-background-hover: $green-600;
+

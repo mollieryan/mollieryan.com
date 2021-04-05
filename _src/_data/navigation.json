@@ -1,0 +1,22 @@
+[
+  {
+    "label": "Home",
+    "url": "/"
+  },
+  {
+    "label": "About Me",
+    "url": "/about/"
+  },
+  {
+    "label": "Services",
+    "url": "/services/"
+  },
+  {
+    "label": "Privacy & Policy",
+    "url": "/privacy-a-policy/"
+  },
+  {
+    "label": "Contact Me",
+    "url": "/contact-me/"
+  }
+]

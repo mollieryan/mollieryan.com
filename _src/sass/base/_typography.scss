@@ -1,0 +1,24 @@
+q {
+  font-style: italic;
+}
+
+dl {
+  display: grid;
+  grid-template-columns: minmax(0, min-content) 1fr;
+  font-size: $font-size-large;
+  line-height: $line-height-large;
+}
+
+dt {
+  font-weight: $font-weight-semibold;
+  padding-right: $spacing-16;
+}
+
+dd, dt {
+  padding-top: $spacing-4;
+  padding-bottom: $spacing-4;
+}
+
+dd:not(:last-of-type), dt:not(:last-of-type) {
+  border-bottom: $border-width-default solid $color-border-default;
+}

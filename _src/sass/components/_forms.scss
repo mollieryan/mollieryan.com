@@ -1,0 +1,44 @@
+.mr-form-container {
+  background: $green-800;
+}
+
+.mr-form {
+  color: $white;
+  padding: $spacing-64 $spacing-16;
+}
+
+.mr-input-text {
+  border: $border-width-default solid $color-border-default;
+  font-size: $font-size-medium;
+  line-height: $line-height-medium;
+  padding: $spacing-8 $spacing-16;
+  font-weight: 400;
+  width: 100%;
+}
+
+.mr-label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: $spacing-8;
+}
+
+.mr-label p {
+  margin-bottom: $spacing-4;
+}
+
+.mr-button {
+  background-color: inherit;
+  border: $border-width-thick solid currentColor;
+  font-size: $font-size-large;
+  line-height: $line-height-large;
+  padding: $spacing-8 $spacing-32;
+  cursor: pointer;
+  color: currentColor;
+  transition: background-color .1s ease-in-out 
+              border-color .1s ease-in-out;
+}
+
+.mr-button:hover {
+  background-color: $button-background-hover;
+  border-color: $button-background-hover;
+}
