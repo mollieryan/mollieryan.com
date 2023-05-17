@@ -16,7 +16,7 @@ I can provide In-depth psychotherapy that focuses on understanding and insight a
 
 #### Trauma Treatment:
 
-My specialization is in trauma treatment and I utilize an integrated trauma therapy approach. I utilize a trauma-informed lens to identify, understand and resolve the effects trauma has on the whole person: mind, body, spirit and relationships.  I also incorporate sensorimotor psychotherapy blending somatic awareness and movement interventions, such as helping clients become aware of their bodies, track bodily sensations and implement physical actions that promote empowerment and competency.
+My specialization is in trauma treatment and I utilize an integrated trauma therapy approach. I utilize a trauma-informed lens to identify, understand and resolve the effects trauma has on the whole person: mind, body, spirit and relationships.  I also incorporate Sensorimotor Psychotherapy (SP) blending somatic awareness and movement interventions, such as helping clients become aware of their bodies, track bodily sensations and implement physical actions that promote empowerment and competency.
 
 Trauma treatment works best in the context of a relationship based on trust, respect, and compassion.
 
